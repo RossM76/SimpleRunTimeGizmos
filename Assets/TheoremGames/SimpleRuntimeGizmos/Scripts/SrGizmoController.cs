@@ -175,6 +175,7 @@ namespace Assets.TheoremGames.SimpleRuntimeGizmos.Scripts
         {
             var distance = Vector3.Distance(Camera.transform.position, _selectedObject.transform.position);
             distance *= 2.0f;
+
             var delta = Time.deltaTime * distance * MovementSpeedMultiplier;
 
             switch (srAxis)
